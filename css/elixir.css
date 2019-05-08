@@ -1,0 +1,19 @@
+.el-top-img {
+  /* background-image: url("https://picsum.photos/id/961/1400/800.jpg"); */
+  background-image: url("../images/dark-bg-1.jpg");
+  background-size: cover;
+  height: 60vw;
+  max-height: 800px;
+}
+
+.prod-title {
+  color: white;
+}
+
+.left-col {
+  padding-right: 0px;
+}
+
+.left-col-content {
+  float: right;
+}
