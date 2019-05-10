@@ -6,7 +6,16 @@
   max-height: 800px;
 }
 
+.prod-img {
+  width: 75%;
+}
+
 .prod-title {
+  font-size: 66px;
+  color: white;
+}
+
+.prod-subtitle {
   color: white;
 }
 
@@ -16,4 +25,12 @@
 
 .left-col-content {
   float: right;
+}
+
+.benefit-content {
+  text-align: center;
+}
+
+.benefit-img {
+  height: 120px;
 }

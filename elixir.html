@@ -7,23 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/elixir.css">
+  <link rel="stylesheet" href="css/svg.css">
 
   <title>ELIXIR</title>
 </head>
 
 <body>
-
-
   <div class="wrapper">
+
+    <!-- Navbar -->
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="#">ELIXIR</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
@@ -43,20 +47,74 @@
       </nav>
     </header>
 
+    <!-- Top Images-->
     <div class="jumbotron jumbotron-fluid el-top-img">
       <div class="container h-100">
         <div class="row h-100">
-          <div class="col-6 left-col my-auto">
+          <div class="col-6 float-right my-auto">
             <div class="left-col-content">
               <h1 class="prod-title">Product Title</h1>
+              <h3 class="prod-subtitle">More Words About the Product</h3>
+              <button class="btn btn-primary">Try Now</button>
             </div>
           </div>
           <div class="col-6 my-auto">
-            <img class="img img-responsive" src="images/mason-jar1.png">
+            <img class="prod-img" src="images/mason-jar1.png">
           </div>
         </div>
       </div>
+    </div>
 
+    <!-- Features -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 benefit-content">
+            <img class="benefit-img"
+            src="https://img.icons8.com/clouds/100/000000/goal.png">
+          <h2>Description</h2>
+          <p>Mazim albucius ponderum sit ea. At inani iisque sed, nec ut iisque habemus,
+            erat utinam honestatis per cu. Labitur accusata conclusionemque eu ius.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 benefit-content">
+          <img class="benefit-img"
+            src="https://img.icons8.com/clouds/100/000000/goal.png">
+          <h2>Description</h2>
+          <p>Iuvaret admodum in vis. Eos cu brute theophrastus, eum ut dicta integre
+            debitis. Id mei malis euripidis delicatissimi, in nobis malorum percipit vel.
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 benefit-content">
+          <img class="benefit-img"
+            src="https://img.icons8.com/clouds/100/000000/goal.png">
+          <h2>Description</h2>
+          <p>Ut aperiri molestie cotidieque vim, fugit putent sensibus ut vix. Vim congue
+            scripta percipit eu, eu duis mandamus assueverit mea. Nisl verear petentium
+            usu te, pri id reque omnesque.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 benefit-content">
+          <img class="benefit-img"
+            src="https://img.icons8.com/clouds/100/000000/goal.png">
+          <h2>Description</h2>
+          <p>Mazim albucius ponderum sit ea. At inani iisque sed, nec ut iisque habemus,
+            erat utinam honestatis per cu. Labitur accusata conclusionemque eu ius.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 benefit-content">
+          <img class="benefit-img"
+            src="https://img.icons8.com/clouds/100/000000/goal.png">
+          <h2>Description</h2>
+          <p>Iuvaret admodum in vis. Eos cu brute theophrastus, eum ut dicta integre
+            debitis. Id mei malis euripidis delicatissimi, in nobis malorum percipit vel.
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 benefit-content">
+          <img class="benefit-img"
+            src="https://img.icons8.com/clouds/100/000000/goal.png">
+          <h2>Description</h2>
+          <p>Ut aperiri molestie cotidieque vim, fugit putent sensibus ut vix. Vim congue
+            scripta percipit eu, eu duis mandamus assueverit mea. Nisl verear petentium
+            usu te, pri id reque omnesque.</p>
+        </div>
+      </div>
     </div>
 
 
@@ -66,7 +124,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
