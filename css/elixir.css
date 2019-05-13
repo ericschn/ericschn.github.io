@@ -1,3 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Blue: #0071C5 */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .el-top-img {
   /* background-image: url("https://picsum.photos/id/961/1400/800.jpg"); */
   background-image: url("../images/dark-bg-1.jpg");
@@ -7,7 +16,7 @@
 }
 
 .cta-btn {
-  float: right;
+  /* float: right; */
   font-size: 16px;
   background-color: #222;
   border: 1px solid #3a3a3a;
@@ -25,16 +34,23 @@
 }
 
 .prod-img {
-  width: 75%;
+  width: 100%;
+  margin-left: -50px;
 }
 
 .prod-title {
-  font-size: 66px;
+  font-size: 46px;
+  font-weight: 900;
   color: white;
 }
 
 .prod-subtitle {
   color: white;
+}
+
+.accent {
+  color: rgb(62, 153, 223);
+  font-weight: 900;
 }
 
 .left-col {
