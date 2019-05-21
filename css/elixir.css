@@ -5,14 +5,15 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #161616;
 }
 
 .el-top-img {
-  /* background-image: url("https://picsum.photos/id/961/1400/800.jpg"); */
-  background-image: url("../images/dark-bg-1.jpg");
+  background-image: url("../images/dark-bg-1-cropped.jpg");
   background-size: cover;
   height: 60vw;
   max-height: 800px;
+  margin-bottom: 0px;
 }
 
 .cta-btn {
@@ -26,6 +27,7 @@ body {
 
 .nav-bg {
   background-color: rgba(0,0,0,0.65);
+  background-color: #161616;
   /* box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2) */
 }
 
@@ -61,10 +63,26 @@ body {
   float: right;
 }
 
+.features {
+  background-color: white;
+  padding-top: 20px;
+}
+
 .benefit-content {
   text-align: center;
 }
 
 .benefit-img {
   height: 120px;
+  padding: 20px;
+}
+
+.footer {
+  padding-top: 20px;
+  background-color: #161616;
+  color: white;
+}
+
+.disclaimer {
+  font-size: 10px;
 }
