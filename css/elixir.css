@@ -4,6 +4,7 @@
 /* Blue: #0071C5 */
 
 body {
+  padding-top: 68px;
   font-family: 'Roboto', sans-serif;
   background-color: #161616;
 }
