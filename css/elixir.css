@@ -4,17 +4,23 @@
 /* Blue: #0071C5 */
 
 body {
-  padding-top: 68px;
+  padding-top: 0px;
   font-family: 'Roboto', sans-serif;
   background-color: #161616;
 }
 
-.el-top-img {
+.elixir-hero {
   background-image: url("../images/dark-bg-1-cropped.jpg");
   background-size: cover;
   height: 60vw;
   max-height: 800px;
+  min-height: 400px;
   margin-bottom: 0px;
+}
+
+.hero-text {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .cta-btn {
@@ -33,16 +39,11 @@ body {
 }
 
 .menu-logo {
-  max-height: 42px;
-}
-
-.prod-img {
-  width: 100%;
-  margin-left: -50px;
+  max-height: 32px;
 }
 
 .prod-title {
-  font-size: 46px;
+  /* font-size: 46px; */
   font-weight: 900;
   color: white;
 }
@@ -73,10 +74,40 @@ body {
   text-align: center;
 }
 
+.benefit-content ul li {
+  text-align: left;
+}
+
+.benefit-content small {
+  text-align: left;
+}
+
 .benefit-img {
   height: 120px;
   padding: 20px;
 }
+
+.benefit-ingredients {
+  text-align: left;
+  font-size: 12px;
+  font-style: italic;
+}
+
+
+/* Available In */
+
+.available-in {
+  background-color: white;
+  padding-top: 10px;
+}
+
+.available-in-grouping {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+/* Footer */
 
 .footer {
   padding-top: 20px;
@@ -86,4 +117,32 @@ body {
 
 .disclaimer {
   font-size: 10px;
+}
+
+.prod-img-div {
+  height: 110%;
+  text-align: center;
+}
+
+.prod-img {
+  height: 100%;
+}
+
+/* Mobile View */
+@media(max-width: 576px) {
+  body {
+    padding-top: 32px;
+  }
+
+  .prod-img-div {
+    height: 350px;
+  }
+
+  .prod-img{
+    height: 350px;
+  }
+
+  .elixir-hero {
+    height: 750px;
+  }
 }
