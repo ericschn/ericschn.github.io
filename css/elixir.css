@@ -16,6 +16,10 @@ h1 {
   font-weight: 900;
 }
 
+.section-title {
+  margin-top: 30px;
+}
+
 h3 {
   font-family: sans-serif;
   font-weight: 900;
@@ -28,6 +32,13 @@ h3 {
   max-height: 800px;
   min-height: 400px;
   margin-bottom: 0px;
+}
+
+.email-bg {
+  background-image: url("../images/dark-bg-1-cropped.jpg");
+  background-size: cover;
+  height: 20vw;
+
 }
 
 .hero-text {
@@ -197,7 +208,41 @@ h3 {
   }
 }
 
+.testimonial-slide {
+  margin-bottom: 30px;
+}
+
+.testimonial-content {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  /* width: 80%; */
+  background-color: #202020;
+  border-radius: 8px;
+  padding: 20px;
+  padding-left: 74px;
+}
+
+.testimonial-portrait {
+  position: absolute;
+  left: 60px;
+  top: 0px;
+  max-width: 100px;
+}
+
+.testimonial-text {
+  font-size: 16pt;
+  margin-bottom: 0px;
+}
+
+
+
 /* Mobile View */
+
+
+
+
 @media(max-width: 575px) {
   body {
     padding-top: 32px;
