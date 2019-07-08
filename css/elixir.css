@@ -231,9 +231,16 @@ h3 {
   max-width: 100px;
 }
 
-.testimonial-text {
+.testimonial-quote {
   font-size: 16pt;
+  margin-top: 14px;
   margin-bottom: 0px;
+}
+
+.testimonial-rating {
+  color: rgb(62, 153, 223);
+  font-size: 22px;
+  margin-left: 16px;
 }
 
 
