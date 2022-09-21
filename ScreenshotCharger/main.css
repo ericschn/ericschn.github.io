@@ -1,0 +1,219 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  /* background-color: rgb(139, 32, 152); */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(146, 61, 185),
+    rgb(70, 15, 61)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgb(43, 58, 100),
+    rgb(144 0 111)
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(145, 7, 203, 1) 0%,
+    rgba(43, 63, 173, 1) 58%,
+    rgba(14, 8, 110, 1) 91%
+  );
+  background-image: linear-gradient(
+    0deg,
+    hsl(227deg 81% 44%) 0%,
+    hsl(239deg 58% 51%) 8%,
+    hsl(249deg 57% 50%) 16%,
+    hsl(257deg 58% 49%) 24%,
+    hsl(264deg 61% 48%) 32%,
+    hsl(271deg 63% 47%) 40%,
+    hsl(277deg 66% 46%) 49%,
+    hsl(282deg 70% 44%) 60%,
+    hsl(288deg 76% 42%) 75%,
+    hsl(293deg 84% 39%) 100%
+  );
+  height: 100%;
+  overflow: hidden;
+}
+
+.ui-wrapper {
+  margin: 20px;
+  position: relative;
+  max-width: 600px;
+}
+
+.info-text {
+  transition: 0.4s all;
+}
+
+button {
+  margin: 6px;
+}
+
+/* Upload Image */
+
+.upload-wrapper {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 22%;
+  transition: 0.2s all ease-in;
+}
+
+.upload-wrapper label {
+  background-color: rgb(77, 138, 77);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  font-family: sans-serif;
+  border-radius: 1.8rem;
+  cursor: pointer;
+  /* width: 100%; */
+}
+
+.btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+}
+
+.upload-btn {
+  border: none;
+  background-color: rgb(77, 138, 77);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  font-family: sans-serif;
+  border-radius: 1.8rem;
+  cursor: pointer;
+}
+
+.upload-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 5%;
+  opacity: 0;
+}
+
+#canvas {
+  border-radius: 8vw;
+  width: 100%;
+}
+
+.canvas-wrapper {
+  padding: 4.1vw;
+  padding-top: 4.4vw;
+}
+
+.bezel {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  z-index: 9;
+}
+
+/* Controls */
+
+.controls {
+  position: fixed;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+}
+
+.controls button {
+  border: none;
+  background-color: rgb(23, 90, 84);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  font-family: sans-serif;
+  border-radius: 1.8rem;
+  cursor: pointer;
+}
+
+#draw-battery {
+  background-color: rgb(77, 138, 77);
+}
+
+/* Mockup */
+
+.mockup-wrapper {
+  position: absolute;
+  bottom: 15%;
+  transition: 0.4s ease-out;
+  max-width: 900px;
+  max-height: 200px;
+}
+
+.mockup {
+  position: relative;
+}
+
+.mockup-down {
+  transform: translate(0px, 400px);
+}
+
+.charging-effects {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 15%;
+  background-color: red;
+}
+
+.bottom-fade {
+  position: absolute;
+  width: 100%;
+  height: 130px;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 1) 90%
+  );
+  z-index: 99;
+}
+
+.fade-in {
+  transition: 0.5s all ease-in;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* Desktop */
+
+@media (min-width: 900px) {
+  .canvas-wrapper {
+    padding: 37px;
+  }
+
+  #canvas {
+    border-radius: 37px;
+  }
+}
+
+/* Animations */
+
+bolt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  font-size: 64px;
+  opacity: 0;
+}

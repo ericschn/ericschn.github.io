@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>ScreenshotCharger</title>
+  </head>
+
+  <body>
+    <div class="ui-wrapper">
+      <h1>ScreenshotCharger</h1>
+      <div class="info-text">
+        <h2>
+          Posting a screenshot with low battery? Quickly give your battery a
+          boost and avoid the inevitable "charge your phone" comments.
+        </h2>
+        <h3>Alpha test restrictions:</h3>
+        <ul>
+          <li>Currently supported devices: iPhone X, XS, and 11 Pro</li>
+          <li>Battery must be below 80%</li>
+          <li>Battery icon color must be white or black</li>
+          <li>Battery must not be charging</li>
+          <li>Battery must not be displaying battery percentage</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="controls-wrapper">
+      <div class="controls">
+        <div class="btn-wrapper">
+          <button id="choose-another">Choose another screenshot</button>
+        </div>
+        <div class="btn-wrapper">
+          <button id="draw-battery">Add some juice</button>
+        </div>
+        <div class="btn-wrapper">
+          <button id="download-screenshot">Download</button>
+        </div>
+      </div>
+
+      <!-- <input
+        type="range"
+        id="battery-add"
+        name="battery-add"
+        min="50"
+        max="100"
+        step="25"
+        value="100"
+      /> -->
+    </div>
+
+    <div class="mockup-wrapper mockup-down">
+      <div class="mockup" id="mockup">
+        <img class="bezel" src="./images/12-mockup-small.png" />
+        <div class="canvas-wrapper">
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="upload-wrapper">
+      <div class="btn-wrapper">
+        <button class="upload-btn">Choose Screenshot</button>
+        <input id="upload-screenshot" type="file" accept="image/png" />
+      </div>
+    </div>
+
+    <div class="bottom-fade"></div>
+
+    <!-- TODO: desktop -->
+    <div style="position: fixed; left: 1000;"><p>Desktop version coming soon</p></div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
