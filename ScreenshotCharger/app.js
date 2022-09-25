@@ -1,4 +1,4 @@
-import { phoneList } from "/phoneList.js";
+import { phoneList } from "./phoneList.js";
 import { batteryColors } from "./batteryColors.js";
 
 const canvas = document.getElementById("canvas");
