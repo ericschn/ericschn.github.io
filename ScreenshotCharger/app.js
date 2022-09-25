@@ -1,4 +1,4 @@
-import { phoneList } from "./phoneList.js";
+import { phoneList } from "/phoneList.js";
 import { batteryColors } from "./batteryColors.js";
 
 const canvas = document.getElementById("canvas");
@@ -8,38 +8,12 @@ let screenshotImage;
 
 const screenshotUrlDebug = "./images/test-xs-gray.png";
 
-// Event Listeners
-
-// Screenshot form event listener
-const imgInput = document.querySelector("#upload-screenshot");
-imgInput.addEventListener("change", () => {
-  const screenshotUrl = URL.createObjectURL(imgInput.files[0]);
-  if (screenshotUrl) {
-    console.log("Image is in the form");
-    // document.querySelector(".upload-wrapper").hidden = true;
-    hideUploadButton();
-    processScreenshot(screenshotUrl);
-  }
-});
-
-// Add some juice button event listener
-let drawBatteryBtn = document.getElementById("draw-battery");
-drawBatteryBtn.addEventListener("click", chargeBattery);
-
-// Download screenshot result event listener
-document.getElementById("download-screenshot").addEventListener("click", () => {
-  const link = document.createElement('a');
-  link.download = 'download.png';
-  link.href = canvas.toDataURL();
-  link.click();
-  link.delete;
-});
-
 // Canvas Drawing
 
 // Process screenshot and draw to canvas
 async function processScreenshot(screenshotUrl) {
   console.log("processScreenshot");
+  moveMockupDown();
   // Load screenshot from generated URL
   await loadImage(screenshotUrl).then((img) => {
     screenshotImage = img;
@@ -105,13 +79,37 @@ async function drawBattery() {
   );
 
   moveMockupUp();
-
-  // DEBUG - rectangle draw test
-  // ctx.fillStyle = 'white';
-  // ctx.beginPath();
-  // ctx.rect(phone.batIconX + 10, phone.batIconY + 7, 46, 22);
-  // ctx.fill();
+  document
+    .querySelector("#download-screenshot")
+    .classList.remove("display-none");
 }
+
+// Event Listeners
+
+// Screenshot form event listener
+const imgInput = document.querySelector("#upload-screenshot");
+imgInput.addEventListener("change", () => {
+  const screenshotUrl = URL.createObjectURL(imgInput.files[0]);
+  if (screenshotUrl) {
+    console.log("Image is in the form");
+    // document.querySelector(".upload-wrapper").hidden = true;
+    hideUploadButton();
+    processScreenshot(screenshotUrl);
+  }
+});
+
+// Add some juice button event listener
+let drawBatteryBtn = document.getElementById("draw-battery");
+drawBatteryBtn.addEventListener("click", chargeBattery);
+
+// Download screenshot result event listener
+document.getElementById("download-screenshot").addEventListener("click", () => {
+  const link = document.createElement("a");
+  link.download = "download.png";
+  link.href = canvas.toDataURL();
+  link.click();
+  link.delete;
+});
 
 // Helper Functions
 
@@ -154,31 +152,38 @@ function getBatteryColor(ctx, p) {
 let mockup = document.querySelector(".mockup-wrapper");
 
 function hideUploadButton() {
-  let uploadBtn = document.querySelector(".upload-wrapper");
-  uploadBtn.classList.add("fade-out");
+  let uploadBtn = document.querySelector("#upload-button");
+  uploadBtn.classList.add("display-none");
+  document.querySelector("#draw-battery").classList.remove("display-none");
   hideInfoText();
   showControls();
 }
 
 function hideInfoText() {
-  let uploadBtn = document.querySelector(".info-text");
-  uploadBtn.classList.add("fade-out");
+  let infoText = document.querySelector(".info-text");
+  infoText.classList.add("fade-out");
+  setTimeout(() => {
+    infoText.classList.add("display-none");
+  }, 1000);
 }
 
 function showControls() {
   let controls = document.querySelector(".controls");
+  controls.classList.remove("display-none");
   controls.classList.add("fade-in");
 }
 
 function moveMockupUp() {
-  mockup.classList.remove("mockup-down");
+  // mockup.classList.remove("display-none");
+  mockup.classList.add("mockup-up");
 }
 
 function moveMockupDown() {
-  mockup.classList.add("mockup-down");
+  mockup.classList.remove("mockup-up");
 }
 
 function chargeBattery() {
+  drawBatteryBtn.classList.add("display-none");
   moveMockupDown();
   showChargeAnimation();
   setTimeout(drawBattery, 800);

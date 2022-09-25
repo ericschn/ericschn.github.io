@@ -32,10 +32,24 @@ Enhance your battery in iOS screenshots
   * Adding charge to a charging phone may be easier
 * Battery percentage option - iOS 16 feature
 
+---
+
+## iOS Safari Issues
+* Usable screen area smaller than anticipated
+* Result download doesn't save to Photos app
+* Choose screenshot link not sized correctly
+* Canvas not able to be long-pressed and saved
+  * Need to turn result into an img tag
+  * Remove pointer events from bezel
+
+---
 
 ## Name Ideas
-BatteryBoost
-ScreenshotSaver
-BatteryFaker
-ScreenshotCharger
-ScreenCharge
+* BatteryBoost
+* ScreenshotSaver
+* BatteryFaker
+* ScreenshotCharger
+* ScreenCharge
+
+DATA
+XS Safari effective height: 630
